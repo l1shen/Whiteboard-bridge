@@ -15,6 +15,7 @@ declare global {
       testRoom: () => void;
       testReplay: () => void;
       html2canvas: any;
+      fpa?: boolean;
     }
 }
 
