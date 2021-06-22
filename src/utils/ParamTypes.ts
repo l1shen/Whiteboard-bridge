@@ -36,6 +36,7 @@ export type NativeSDKConfig = {
     /** native 预热结果，web sdk 升级至 2.8.0 后，该功能不再需要主动测一遍。保留该字段，是为了兼容，以及抽离选项 */
     initializeOriginsStates?: any;
     __platform: "ios" | "android";
+    fpa?: boolean;
 } & WhiteWebSdkConfiguration;
 
 // Android 使用 enum 名称，请勿随意改动
