@@ -57,7 +57,7 @@ config = {
     rules: [
       {
         test: /\.(ts|js)x?$/,
-        exclude: /node_modules/,
+        exclude: /(?<!white-web-sdk)\/node_modules\/(?!white-web-sdk)/,
         use: {
           loader: 'babel-loader'
         },
